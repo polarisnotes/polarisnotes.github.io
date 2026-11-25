@@ -2,7 +2,7 @@
 title: "This is A new note"
 author: ["Filip Alimpic"]
 date: 2026-11-24
-tags: ["concept"]
+tags: ["concept", "newtag"]
 draft: false
 ---
 

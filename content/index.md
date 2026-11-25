@@ -4,7 +4,6 @@ author: ["Filip Alimpic"]
 draft: false
 ---
 
-h
 Notes and reading paths on AI safety, existential risk and environmental change.
 
 Most people who come to these topics find two things hard. The ideas themselves are dense, and the fields rarely talk to each other. Polaris notes is my attempt to make both easier.
