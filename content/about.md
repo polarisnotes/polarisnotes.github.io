@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About this project"
 author: ["Filip Alimpic"]
 draft: false
 ---
