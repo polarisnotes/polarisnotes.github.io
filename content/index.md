@@ -1,5 +1,4 @@
 ---
-title: "Polaris notes"
 author: ["Filip Alimpic"]
 draft: false
 ---
