@@ -120,6 +120,16 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      sortFn: |
+        (a, b) => {
+          const order = ["About this project", "AI safety", "Environmental science", "Existential risk", "Connections", "Reading paths"];
+          const rank = (name) => { const i = order.indexOf(name); return i === -1 ? order.length : i; };
+          const diff = rank(a.displayName) - rank(b.displayName);
+          if (diff !== 0) return diff;
+          if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1;
+          return a.displayName.localeCompare(b.displayName, undefined, { numeric: true, sensitivity: "base" });
+        }
     layout:
       position: left
       priority: 50
