@@ -84,3 +84,11 @@ footer ul:empty {
   font-size: 0.85rem;
   color: var(--darkgray);
 }
+
+/* Stack the reader mode and theme buttons vertically */
+.sidebar.left > :has(.readermode) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0.5rem;
+}
