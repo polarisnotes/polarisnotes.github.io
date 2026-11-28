@@ -57,13 +57,33 @@ footer ul:empty {
   visibility: visible;
 }
 
-/* Show the keyboard shortcut in the search bar */
+/* Make the search bar span the full width of the sidebar */
+.sidebar.left > :has(.search) {
+  width: 100% !important;
+  justify-content: flex-start !important;
+}
+
+.sidebar.left .search {
+  flex: 1 1 auto !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.sidebar.left .search > .search-button {
+  width: 100% !important;
+}
+
+/* Search label on the left, shortcut hint on the right */
 .search > .search-button > p {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   white-space: nowrap;
 }
 
 .search > .search-button > p::after {
-  content: " | \2318 K / Ctrl K";
+  content: "\2318 K / Ctrl K";
   font-size: 0.85em;
   opacity: 0.6;
 }
