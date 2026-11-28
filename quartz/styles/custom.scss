@@ -1,6 +1,9 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+/* Polaris notes custom styles */
+
+/* Logo next to the site title */
 .page-title a {
   display: inline-flex;
   align-items: center;
@@ -14,10 +17,53 @@
   flex-shrink: 0;
   background: url("/static/icon.png") center / contain no-repeat;
 }
-footer > p:not(.footer-message) {
-  display: none;
+
+/* Footer shows only my copyright line */
+footer p:not(.footer-message) {
+  display: none !important;
 }
 
 footer ul:empty {
-  display: none;
+  display: none !important;
+}
+
+/* Hide the Explorer heading and its fold arrow on desktop */
+.explorer .desktop-explorer {
+  display: none !important;
+}
+
+/* Push the theme and reader buttons to the bottom of the left sidebar */
+@media (min-width: 800px) {
+  .sidebar.left > :last-child {
+    margin-top: auto;
+  }
+}
+
+/* Reader mode hides the left sidebar, except the logo and the two buttons */
+:root[reader-mode="on"] .sidebar.left {
+  opacity: 1 !important;
+}
+
+:root[reader-mode="on"] .sidebar.left .search,
+:root[reader-mode="on"] .sidebar.left .explorer {
+  visibility: hidden;
+}
+
+:root[reader-mode="on"] .sidebar.left .page-title a {
+  visibility: hidden;
+}
+
+:root[reader-mode="on"] .sidebar.left .page-title a::before {
+  visibility: visible;
+}
+
+/* Show the keyboard shortcut in the search bar */
+.search > .search-button > p {
+  white-space: nowrap;
+}
+
+.search > .search-button > p::after {
+  content: " | \2318 K / Ctrl K";
+  font-size: 0.85em;
+  opacity: 0.6;
 }
