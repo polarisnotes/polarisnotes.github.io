@@ -35,3 +35,5 @@ Polaris is the North Star. Sailors and travellers have used it for centuries to 
 If you would like to write for Polaris notes, suggest a resource or correct a mistake, email me at mentee.causal_7o[at]icloud[dot]com.
 
 The views on this site are my own. They do not represent any organisation I work with.
+
+This site is built with [Quartz](https://quartz.jzhao.xyz), a free and open-source tool by Jacky Zhao.
