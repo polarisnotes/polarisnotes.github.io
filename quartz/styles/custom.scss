@@ -14,3 +14,10 @@
   flex-shrink: 0;
   background: url("/static/icon.png") center / contain no-repeat;
 }
+footer > p:not(.footer-message) {
+  display: none;
+}
+
+footer ul:empty {
+  display: none;
+}
