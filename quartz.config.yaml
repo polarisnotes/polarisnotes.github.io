@@ -175,13 +175,13 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 90
+      priority: 91
       group: bottombar
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
       position: left
-      priority: 91
+      priority: 90
       group: bottombar
   - source: "@quartz-community/breadcrumbs"
     enabled: true
@@ -253,7 +253,7 @@ layout:
   groups:
     toolbar:
       priority: 35
-      direction: row
+      direction: column
       gap: 0.5rem
     bottombar:
       direction: row
