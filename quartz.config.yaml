@@ -200,11 +200,8 @@ plugins:
   - source: "@quartz-community/footer"
     enabled: true
     options:
-      links:
-        About: https://polarisnotes.github.io/about
-    layout:
-      position: footer
-      priority: 50
+      links: {}
+      message: "© 2026 Filip Alimpić"
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
