@@ -67,3 +67,20 @@ footer ul:empty {
   font-size: 0.85em;
   opacity: 0.6;
 }
+
+/* Show a label next to the book icon while reader mode is on */
+.readermode {
+  position: relative;
+}
+
+:root[reader-mode="on"] .readermode::after {
+  content: "Reader mode";
+  position: absolute;
+  left: calc(100% + 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-family: var(--bodyFont, inherit);
+  font-size: 0.85rem;
+  color: var(--darkgray);
+}
